@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Reviews — BoardRankCTG (Maintenance Mode)</title>
+  <meta name="description" content="The Reviews page is currently under maintenance. We're fixing some bugs!" />
+  <meta name="author" content="Hasnyne" />
+  <link rel="canonical" href="https://boradrankctg.github.io/rank/review.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Reviews — BoardRankCTG" />
+  <meta property="og:description" content="This page is temporarily unavailable as we fix some bugs." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts + Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="icon" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/icons/trophy-line.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <!-- Top App Nav -->
+  <nav class="app-nav" role="navigation">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">🎓 BoardRankCTG</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <i class="ri-menu-line"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"><i class="fas fa-house-chimney"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-user-tie"></i> About</a></li>
+        <li><a href="review.html" class="active"><i class="fas fa-star-half-stroke"></i> Reviews</a></li>
+        <li><a href="contactus.html"><i class="fas fa-envelope-open-text"></i> Contact</a></li>
+
+        <li><button id="helpBtn" class="linklike"><i class="fas fa-question-circle"></i> Help</button></li>
+        <li><button id="shareBtn" class="linklike"><i class="ri-share-line"></i> Share</button></li>
+        <li><a href="visitors.html" id="visitorsLink"><i class="fas fa-users"></i> Visitors</a></li>
+
+        <li class="divider"></li>
+        <li>
+          <label class="theme-switch" title="Toggle theme">
+            <input type="checkbox" id="themeToggle" />
+            <span class="slider" aria-hidden="true"></span>
+            <span class="label">Dark mode</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- Announcements -->
+  <div id="annBanner" class="ann-banner type-info" style="display:none;">
+    <div class="ann-inner">
+      <div class="ann-text" id="annText"></div>
+      <a id="annBtn" class="ann-btn" href="#" target="_blank" rel="noopener" style="display:none;">Learn more</a>
+    </div>
+  </div>
+
+  <main class="container" style="padding-top: 60px; text-align:center;">
+    <i class="ri-bug-line" style="font-size: 3rem; color: #e11d48;"></i>
+    <h1 style="margin-top: 10px;">We’re fixing a few bugs 🛠️</h1>
+    <p style="color: #555; font-size: 1.1rem; margin-top: 6px;">
+      The Reviews section is temporarily unavailable.<br>
+      Our team is squashing some issues to make everything smoother.<br>
+      Please check back soon!
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 BoardRankCTG — Made by Hasnyne
+  </footer>
+
+  <!-- Ban overlay -->
+  <div id="banOverlay">
+    <div class="ban-card">
+      <h3>🚫 Access Restricted</h3>
+      <p id="banReason">Reason: —</p>
+      <p id="banUntil">Until: —</p>
+      <div id="banTimer" style="font-weight:800;margin-top:6px;"></div>
+      <p style="margin-top:12px;font-size:.9rem;">If you think this is a mistake, contact the admin.</p>
+    </div>
+  </div>
+
+  <!-- Site-wide script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
