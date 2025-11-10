@@ -1,2 +1,1 @@
-#Board rank
-Chattogram Board Students' SSC Ranking
+Chattogram Board Students' SSC and HSC Ranking
